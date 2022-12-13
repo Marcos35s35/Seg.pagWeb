@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a{
+    font-family:Cursive; 
+    font-size:50px; 
+    
+   text-shadow: 2px 2px 4px #000000;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+       animation: rainbow-animation 90s linear infinite;
+} 
+@keyframes rainbow-animation { 
+    to { 
+        background-position: 4500vh; 
+        } 
+}
+.heart {
+  position: fixed;
+  top: -1vh;
+  font-size : 2rem;
+  transform: translateY(0);
+  animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+h1{
+    height: auto;
+    width: auto;
+    border-style: dashed ;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
